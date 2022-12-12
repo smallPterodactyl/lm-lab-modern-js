@@ -1,5 +1,15 @@
 // Instructions can be found in default_parameters.md
 
-export const sayHello = (person) => {
+/* template literal solution */
+/*export const sayHello = (person) => {
   return `Hello, ${person === undefined ? "you!" : person + "!"}`;
 };
+*/
+
+/* Now with default parameters*/
+export const sayHello = (person = 'you') => {
+
+  return `Hello, ${person}!`
+
+};
+
