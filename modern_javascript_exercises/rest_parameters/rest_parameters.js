@@ -1,10 +1,8 @@
-// Instructions can be found in rest_parameters.md
 
-function add(a, b) {
-  // Add a loop here
-  return a + b;
+export function add (numOne, numTwo, ... otherNums) {
+ 
+return ([numOne, numTwo, ... otherNums].reduce((sumNums, currentNum) => sumNums + currentNum));
+
 }
 
-add(1, 2, 3, 4, 5);
 
-module.exports = add;
